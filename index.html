@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+<div class="header">
+	<div class="title">Hshare-</div>
+	<div class="header-item">Easy File Sharing</div>
+</div>
+<div class="main">
+	<div class="vids">
+		<video id="v1" height="120" width="160" poster="./NoVideo.png" autoplay muted></video>
+		<video id="v2" height="120" width="160" poster="./NoVideo.png" autoplay></video><br>
+	</div>
+	<div>
+		<input type="checkbox" id="vidtoggle">Stream Video</input>
+	</div>
+	<div class="circle one"></div>
+	<div class="circle two"></div>
+	<div class="circle three"></div>
+	<table class="tab">
+		<tr>
+			<td>
+		<p>Chat:</p>
+			</td>
+			<td>
+<textarea id="chat"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<p>Send:</p>
+			</td>
+			<td>
+<input id="file" type="file"></input>
+			</td>
+		</tr>
+	</table>
+	<div id="logbox"></div>
+</div>
+<div class="dialog" id="conn">
+	<table class="tab">
+		<tr>
+			<td>
+		<button id="button" onclick="createOffer()">LINK:</button>
+			</td>
+			<td>
+		<textarea id="offer" placeholder="Paste offer here"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<p>Answer:</p>
+			</td>
+			<td>
+<textarea id="answer"></textarea><br><div id="div"></div>
+			</td>
+		</tr>
+	</table>
+</div>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="./FileSaver.js"></script>
+<script src="./pako.js"></script>
+<script src="./base64.js"></script>
+<script src="./script.js"></script>
+	</body>
+</html>
